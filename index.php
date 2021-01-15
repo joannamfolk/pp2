@@ -14,21 +14,35 @@
     <title>Pair Program 2</title>
 </head>
 <body>
-<h1>Welcome to Jo's World </h1>
+
+    <h1>Welcome to Jo's World </h1>
 
 </body>
 </html>
 
 <?php
 
-// Block for error reporting
-error_reporting(E_ALL);
-ini_set('display_errors', TRUE);
+    // Block for error reporting
+    error_reporting(E_ALL);
+    ini_set('display_errors', TRUE);
 
 ?>
 
 <?php
 
-// Block for PHP Array Practice
+    // Block for PHP Array Practice
+    // An array holding a random assortment of numbers
+    $numbers = array('7','9','8','9','8','8','6');
+
+    // A function to print an array, with $numbers as the parameter
+    function printArr($numbers) {
+        // A foreach loop representing each number in the array on a separate line
+        foreach ($numbers as $number) {
+            echo "$number <br>";
+        }
+    }
+
+    // A function call
+    printArr($numbers);
 
 ?>
