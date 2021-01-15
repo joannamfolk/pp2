@@ -54,4 +54,9 @@
     $array = removeDups($numbers);
     printArr($array);
 
+    echo "<br><br>Elements counted & returned as an Associative Array: <br><br>";
+
+    // Print as an associativeArray (associativeArray returned)
+    $field = distribution($numbers);
+
 ?>

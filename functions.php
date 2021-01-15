@@ -26,5 +26,41 @@
 
     }
 
-    // A function that turns a standard arr to an associative arr with ordered pairs
+    // A function that turns a standard arr to an associative arr with # of occurances
+    function distribution($arr) {
 
+
+        // array = name/counter
+
+        // keys should be sorted
+
+        // sort
+
+        // count ea/ in array - throw into a second arr @ $i
+
+        // pair arr w/ associative
+
+        $numbers = removeDups($arr);
+        $occurance = array_count_values($arr);
+        $assoArray = array_combine($numbers, $occurance);
+        ksort($assoArray);
+
+        echo "[";
+
+        foreach ($assoArray as $key => $value) {
+
+            echo "$key=> $value, ";
+        }
+
+        echo "]";
+
+        return $assoArray;
+
+    }
+
+
+    /*
+
+    foreach ($aso_arr as $side => $direc) {
+        echo $side . " => " . $direc . "<br>";
+    } */
