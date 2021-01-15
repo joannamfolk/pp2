@@ -14,9 +14,8 @@
         // Sort $arr param in order of value
         rsort($arr);
 
-        // Foreach printing out numbers in order
-        foreach ($arr as $a) {
-             echo "$a <br>";
+        for ($i = 0; $i < 1; $i++) {
+            echo "$arr[$i] <br>";
         }
     }
 
@@ -26,4 +25,6 @@
         return array_unique($arr);
 
     }
+
+    // A function that turns a standard arr to an associative arr with ordered pairs
 
