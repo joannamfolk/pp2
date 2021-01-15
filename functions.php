@@ -29,27 +29,28 @@
     // A function that turns a standard arr to an associative arr with # of occurances
     function distribution($arr) {
 
-
-        // array = name/counter
-
-        // keys should be sorted
-
-        // sort
-
-        // count ea/ in array - throw into a second arr @ $i
-
-        // pair arr w/ associative
-
+        // Grab unique number values and their amount - then combine into one array
         $numbers = removeDups($arr);
         $occurance = array_count_values($arr);
         $assoArray = array_combine($numbers, $occurance);
+
+        // Sort order of $associativeArray
         ksort($assoArray);
+
+        // Counter for , separation
+        $count = 0;
 
         echo "[";
 
         foreach ($assoArray as $key => $value) {
+            $count++;
 
-            echo "$key=> $value, ";
+            if ($count == count($assoArray)) {
+                echo "$key=> $value";
+            } else {
+                echo "$key=> $value, ";
+            }
+
         }
 
         echo "]";
