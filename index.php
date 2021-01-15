@@ -30,11 +30,22 @@
 
 <?php
 
+    // Calls upon the functions of functions.php
+    include 'functions.php';
+
     // Block for PHP Array Practice
+
+    echo "<br><br>Numbers printed from an array: <br>";
+
     // An array holding a random assortment of numbers
     $numbers = array('7','9','8','9','8','8','6');
 
-    // A function call
+    // Print out the numbers on the page
     printArr($numbers);
+
+    echo "<br><br>Numbers sorted from Largest to Smallest: <br>";
+
+    // Print out the numbers in order on the page
+    largest($numbers);
 
 ?>
