@@ -48,4 +48,10 @@
     // Print out the numbers in order on the page
     largest($numbers);
 
+    echo "<br><br>All unique values from the Array: <br>";
+
+    // Print out unique values of an array
+    $array = removeDups($numbers);
+    printArr($array);
+
 ?>

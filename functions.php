@@ -19,3 +19,11 @@
              echo "$a <br>";
         }
     }
+
+    // A function that removes duplicates from an array
+    function removeDups($arr) {
+
+        return array_unique($arr);
+
+    }
+
