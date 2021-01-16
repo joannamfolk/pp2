@@ -58,10 +58,3 @@
         return $assoArray;
 
     }
-
-
-    /*
-
-    foreach ($aso_arr as $side => $direc) {
-        echo $side . " => " . $direc . "<br>";
-    } */
